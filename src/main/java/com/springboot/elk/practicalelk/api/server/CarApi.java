@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -28,8 +29,8 @@ public class CarApi {
 		return carService.generateCar();
 	}
 	
-	@PostMapping(value = "/echo", consumes = MediaType.APPLICATION_JSON_VALUE )
-	public String echo(Car car) {
+	@PostMapping(value = "/echo", consumes = MediaType.APPLICATION_JSON_VALUE)
+	public String echo(@RequestBody Car car) {
 		LOG.info("Car is : " + car);
 		return car.toString();
 	}

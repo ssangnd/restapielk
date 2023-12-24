@@ -16,3 +16,200 @@
 [Practical Java] [2m20:40:37.729[0;39m [32mDEBUG[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m Running with Spring Boot v3.2.1, Spring v6.1.2
 [Practical Java] [2m20:40:37.729[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m No active profile set, falling back to 1 default profile: "default"
 [Practical Java] [2m20:40:38.131[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m Started PracticalelkApplication in 0.476 seconds (process running for 465.76)
+[Practical Java] [2m20:40:51.974[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m Starting PracticalelkApplication using Java 21.0.1 with PID 19916 (C:\development\eclipse-workspace\practicalelk\bin\main started by STYLVN in C:\development\eclipse-workspace\practicalelk)
+[Practical Java] [2m20:40:51.975[0;39m [32mDEBUG[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m Running with Spring Boot v3.2.1, Spring v6.1.2
+[Practical Java] [2m20:40:51.975[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m No active profile set, falling back to 1 default profile: "default"
+[Practical Java] [2m20:40:52.194[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m Started PracticalelkApplication in 0.255 seconds (process running for 479.824)
+[Practical Java] [2m20:47:40.321[0;39m [31mERROR[0;39m [2m---[0;39m [36mo.a.c.c.C.[.[.[/].[dispatcherServlet]   [0;39m [2m:[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalStateException: Cannot resolve parameter names for constructor public com.springboot.elk.practicalelk.entity.Car(java.lang.String,java.lang.String,java.lang.String)] with root cause
+
+java.lang.IllegalStateException: Cannot resolve parameter names for constructor public com.springboot.elk.practicalelk.entity.Car(java.lang.String,java.lang.String,java.lang.String)
+	at org.springframework.util.Assert.state(Assert.java:97)
+	at org.springframework.beans.BeanUtils.getParameterNames(BeanUtils.java:641)
+	at org.springframework.validation.DataBinder.createObject(DataBinder.java:932)
+	at org.springframework.validation.DataBinder.construct(DataBinder.java:903)
+	at org.springframework.web.bind.ServletRequestDataBinder.construct(ServletRequestDataBinder.java:116)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletModelAttributeMethodProcessor.constructAttribute(ServletModelAttributeMethodProcessor.java:156)
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:148)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:226)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:179)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:829)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[Practical Java] [2m20:48:56.727[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m Starting PracticalelkApplication using Java 21.0.1 with PID 3112 (C:\development\eclipse-workspace\practicalelk\bin\main started by STYLVN in C:\development\eclipse-workspace\practicalelk)
+[Practical Java] [2m20:48:56.729[0;39m [32mDEBUG[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m Running with Spring Boot v3.2.1, Spring v6.1.2
+[Practical Java] [2m20:48:56.729[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m No active profile set, falling back to 1 default profile: "default"
+[Practical Java] [2m20:48:57.945[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m Started PracticalelkApplication in 1.747 seconds (process running for 2.324)
+[Practical Java] [2m20:49:21.006[0;39m [31mERROR[0;39m [2m---[0;39m [36mo.a.c.c.C.[.[.[/].[dispatcherServlet]   [0;39m [2m:[0;39m Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalStateException: Cannot resolve parameter names for constructor public com.springboot.elk.practicalelk.entity.Car(java.lang.String,java.lang.String,java.lang.String)] with root cause
+
+java.lang.IllegalStateException: Cannot resolve parameter names for constructor public com.springboot.elk.practicalelk.entity.Car(java.lang.String,java.lang.String,java.lang.String)
+	at org.springframework.util.Assert.state(Assert.java:97)
+	at org.springframework.beans.BeanUtils.getParameterNames(BeanUtils.java:641)
+	at org.springframework.validation.DataBinder.createObject(DataBinder.java:932)
+	at org.springframework.validation.DataBinder.construct(DataBinder.java:903)
+	at org.springframework.web.bind.ServletRequestDataBinder.construct(ServletRequestDataBinder.java:116)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletModelAttributeMethodProcessor.constructAttribute(ServletModelAttributeMethodProcessor.java:156)
+	at org.springframework.web.method.annotation.ModelAttributeMethodProcessor.resolveArgument(ModelAttributeMethodProcessor.java:148)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:226)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:179)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:829)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[Practical Java] [2m20:50:16.224[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m Starting PracticalelkApplication using Java 21.0.1 with PID 3112 (C:\development\eclipse-workspace\practicalelk\bin\main started by STYLVN in C:\development\eclipse-workspace\practicalelk)
+[Practical Java] [2m20:50:16.224[0;39m [32mDEBUG[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m Running with Spring Boot v3.2.1, Spring v6.1.2
+[Practical Java] [2m20:50:16.225[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m No active profile set, falling back to 1 default profile: "default"
+[Practical Java] [2m20:50:16.601[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m Started PracticalelkApplication in 0.431 seconds (process running for 80.981)
+[Practical Java] [2m20:50:17.939[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.elk.practicalelk.api.server.CarApi  [0;39m [2m:[0;39m Car is : Car [brand=null, color=null, type=null]
+[Practical Java] [2m20:50:30.132[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.elk.practicalelk.api.server.CarApi  [0;39m [2m:[0;39m Car is : Car [brand=null, color=null, type=null]
+[Practical Java] [2m20:51:22.700[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m Starting PracticalelkApplication using Java 21.0.1 with PID 3112 (C:\development\eclipse-workspace\practicalelk\bin\main started by STYLVN in C:\development\eclipse-workspace\practicalelk)
+[Practical Java] [2m20:51:22.700[0;39m [32mDEBUG[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m Running with Spring Boot v3.2.1, Spring v6.1.2
+[Practical Java] [2m20:51:22.700[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m No active profile set, falling back to 1 default profile: "default"
+[Practical Java] [2m20:51:22.970[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m Started PracticalelkApplication in 0.313 seconds (process running for 147.349)
+[Practical Java] [2m20:51:23.824[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.elk.practicalelk.api.server.CarApi  [0;39m [2m:[0;39m Car is : Car [brand=null, color=null, type=null]
+[Practical Java] [2m20:51:25.204[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.elk.practicalelk.api.server.CarApi  [0;39m [2m:[0;39m Car is : Car [brand=null, color=null, type=null]
+[Practical Java] [2m20:53:48.176[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m Starting PracticalelkApplication using Java 21.0.1 with PID 3112 (C:\development\eclipse-workspace\practicalelk\bin\main started by STYLVN in C:\development\eclipse-workspace\practicalelk)
+[Practical Java] [2m20:53:48.176[0;39m [32mDEBUG[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m Running with Spring Boot v3.2.1, Spring v6.1.2
+[Practical Java] [2m20:53:48.176[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m No active profile set, falling back to 1 default profile: "default"
+[Practical Java] [2m20:53:48.386[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m Started PracticalelkApplication in 0.241 seconds (process running for 292.765)
+[Practical Java] [2m20:53:56.803[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m Starting PracticalelkApplication using Java 21.0.1 with PID 15816 (C:\development\eclipse-workspace\practicalelk\bin\main started by STYLVN in C:\development\eclipse-workspace\practicalelk)
+[Practical Java] [2m20:53:56.804[0;39m [32mDEBUG[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m Running with Spring Boot v3.2.1, Spring v6.1.2
+[Practical Java] [2m20:53:56.805[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m No active profile set, falling back to 1 default profile: "default"
+[Practical Java] [2m20:53:58.082[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m Started PracticalelkApplication in 1.818 seconds (process running for 2.395)
+[Practical Java] [2m20:54:01.135[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.elk.practicalelk.api.server.CarApi  [0;39m [2m:[0;39m Car is : Car [brand=null, color=null, type=null]
+[Practical Java] [2m20:54:02.259[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.elk.practicalelk.api.server.CarApi  [0;39m [2m:[0;39m Car is : Car [brand=null, color=null, type=null]
+[Practical Java] [2m20:54:03.211[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.elk.practicalelk.api.server.CarApi  [0;39m [2m:[0;39m Car is : Car [brand=null, color=null, type=null]
+[Practical Java] [2m20:54:04.124[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.elk.practicalelk.api.server.CarApi  [0;39m [2m:[0;39m Car is : Car [brand=null, color=null, type=null]
+[Practical Java] [2m20:54:05.000[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.elk.practicalelk.api.server.CarApi  [0;39m [2m:[0;39m Car is : Car [brand=null, color=null, type=null]
+[Practical Java] [2m20:54:26.830[0;39m [33m WARN[0;39m [2m---[0;39m [36m.w.s.m.s.DefaultHandlerExceptionResolver[0;39m [2m:[0;39m Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type is not supported]
+[Practical Java] [2m20:57:33.836[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m Starting PracticalelkApplication using Java 21.0.1 with PID 15816 (C:\development\eclipse-workspace\practicalelk\bin\main started by STYLVN in C:\development\eclipse-workspace\practicalelk)
+[Practical Java] [2m20:57:33.837[0;39m [32mDEBUG[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m Running with Spring Boot v3.2.1, Spring v6.1.2
+[Practical Java] [2m20:57:33.837[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m No active profile set, falling back to 1 default profile: "default"
+[Practical Java] [2m20:57:34.095[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m Started PracticalelkApplication in 0.296 seconds (process running for 218.409)
+[Practical Java] [2m20:57:59.251[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m Starting PracticalelkApplication using Java 21.0.1 with PID 15816 (C:\development\eclipse-workspace\practicalelk\bin\main started by STYLVN in C:\development\eclipse-workspace\practicalelk)
+[Practical Java] [2m20:57:59.252[0;39m [32mDEBUG[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m Running with Spring Boot v3.2.1, Spring v6.1.2
+[Practical Java] [2m20:57:59.252[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m No active profile set, falling back to 1 default profile: "default"
+[Practical Java] [2m20:57:59.545[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m Started PracticalelkApplication in 0.339 seconds (process running for 243.858)
+[Practical Java] [2m20:57:59.651[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.elk.practicalelk.api.server.CarApi  [0;39m [2m:[0;39m Car is : Car [brand= )
+[Practical Java] [2m20:58:22.606[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m Starting PracticalelkApplication using Java 21.0.1 with PID 15816 (C:\development\eclipse-workspace\practicalelk\bin\main started by STYLVN in C:\development\eclipse-workspace\practicalelk)
+[Practical Java] [2m20:58:22.608[0;39m [32mDEBUG[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m Running with Spring Boot v3.2.1, Spring v6.1.2
+[Practical Java] [2m20:58:22.608[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m No active profile set, falling back to 1 default profile: "default"
+[Practical Java] [2m20:58:22.823[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m Started PracticalelkApplication in 0.262 seconds (process running for 267.136)
+[Practical Java] [2m20:58:45.802[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.elk.practicalelk.api.server.CarApi  [0;39m [2m:[0;39m Car is : Car [brand= )
+[Practical Java] [2m20:58:46.912[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.elk.practicalelk.api.server.CarApi  [0;39m [2m:[0;39m Car is : Car [brand= )
+[Practical Java] [2m20:59:10.572[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m Starting PracticalelkApplication using Java 21.0.1 with PID 15816 (C:\development\eclipse-workspace\practicalelk\bin\main started by STYLVN in C:\development\eclipse-workspace\practicalelk)
+[Practical Java] [2m20:59:10.573[0;39m [32mDEBUG[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m Running with Spring Boot v3.2.1, Spring v6.1.2
+[Practical Java] [2m20:59:10.573[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m No active profile set, falling back to 1 default profile: "default"
+[Practical Java] [2m20:59:10.831[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m Started PracticalelkApplication in 0.3 seconds (process running for 315.144)
+[Practical Java] [2m20:59:11.816[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.elk.practicalelk.api.server.CarApi  [0;39m [2m:[0;39m Car is : Car [brand=null, color=null, type=null]
+[Practical Java] [2m20:59:13.365[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.elk.practicalelk.api.server.CarApi  [0;39m [2m:[0;39m Car is : Car [brand=null, color=null, type=null]
+[Practical Java] [2m20:59:14.623[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.elk.practicalelk.api.server.CarApi  [0;39m [2m:[0;39m Car is : Car [brand=null, color=null, type=null]
+[Practical Java] [2m20:59:15.517[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.elk.practicalelk.api.server.CarApi  [0;39m [2m:[0;39m Car is : Car [brand=null, color=null, type=null]
+[Practical Java] [2m20:59:22.947[0;39m [33m WARN[0;39m [2m---[0;39m [36m.w.s.m.s.DefaultHandlerExceptionResolver[0;39m [2m:[0;39m Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'application/javascript' is not supported]
+[Practical Java] [2m20:59:25.791[0;39m [33m WARN[0;39m [2m---[0;39m [36m.w.s.m.s.DefaultHandlerExceptionResolver[0;39m [2m:[0;39m Resolved [org.springframework.web.HttpMediaTypeNotSupportedException: Content-Type 'text/plain' is not supported]
+[Practical Java] [2m20:59:29.427[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.elk.practicalelk.api.server.CarApi  [0;39m [2m:[0;39m Car is : Car [brand=null, color=null, type=null]
+[Practical Java] [2m20:59:31.039[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.elk.practicalelk.api.server.CarApi  [0;39m [2m:[0;39m Car is : Car [brand=null, color=null, type=null]
+[Practical Java] [2m20:59:32.101[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.elk.practicalelk.api.server.CarApi  [0;39m [2m:[0;39m Car is : Car [brand=null, color=null, type=null]
+[Practical Java] [2m21:00:19.884[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m Starting PracticalelkApplication using Java 21.0.1 with PID 15816 (C:\development\eclipse-workspace\practicalelk\bin\main started by STYLVN in C:\development\eclipse-workspace\practicalelk)
+[Practical Java] [2m21:00:19.884[0;39m [32mDEBUG[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m Running with Spring Boot v3.2.1, Spring v6.1.2
+[Practical Java] [2m21:00:19.884[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m No active profile set, falling back to 1 default profile: "default"
+[Practical Java] [2m21:00:20.082[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m Started PracticalelkApplication in 0.228 seconds (process running for 384.395)
+[Practical Java] [2m21:00:59.146[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.elk.practicalelk.api.server.CarApi  [0;39m [2m:[0;39m Car is : Car [brand=null, color=null, type=null]
+[Practical Java] [2m21:01:00.577[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.elk.practicalelk.api.server.CarApi  [0;39m [2m:[0;39m Car is : Car [brand=null, color=null, type=null]
+[Practical Java] [2m21:01:42.571[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m Starting PracticalelkApplication using Java 21.0.1 with PID 15816 (C:\development\eclipse-workspace\practicalelk\bin\main started by STYLVN in C:\development\eclipse-workspace\practicalelk)
+[Practical Java] [2m21:01:42.571[0;39m [32mDEBUG[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m Running with Spring Boot v3.2.1, Spring v6.1.2
+[Practical Java] [2m21:01:42.571[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m No active profile set, falling back to 1 default profile: "default"
+[Practical Java] [2m21:01:42.782[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m Started PracticalelkApplication in 0.24 seconds (process running for 467.096)
+[Practical Java] [2m21:01:44.290[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m Starting PracticalelkApplication using Java 21.0.1 with PID 15816 (C:\development\eclipse-workspace\practicalelk\bin\main started by STYLVN in C:\development\eclipse-workspace\practicalelk)
+[Practical Java] [2m21:01:44.291[0;39m [32mDEBUG[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m Running with Spring Boot v3.2.1, Spring v6.1.2
+[Practical Java] [2m21:01:44.291[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m No active profile set, falling back to 1 default profile: "default"
+[Practical Java] [2m21:01:44.483[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m Started PracticalelkApplication in 0.22 seconds (process running for 468.796)
+[Practical Java] [2m21:01:59.383[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m Starting PracticalelkApplication using Java 21.0.1 with PID 15816 (C:\development\eclipse-workspace\practicalelk\bin\main started by STYLVN in C:\development\eclipse-workspace\practicalelk)
+[Practical Java] [2m21:01:59.383[0;39m [32mDEBUG[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m Running with Spring Boot v3.2.1, Spring v6.1.2
+[Practical Java] [2m21:01:59.383[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m No active profile set, falling back to 1 default profile: "default"
+[Practical Java] [2m21:01:59.604[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.e.p.PracticalelkApplication         [0;39m [2m:[0;39m Started PracticalelkApplication in 0.251 seconds (process running for 483.917)
+[Practical Java] [2m21:02:00.022[0;39m [32m INFO[0;39m [2m---[0;39m [36mc.s.elk.practicalelk.api.server.CarApi  [0;39m [2m:[0;39m Car is : Car [brand=null, color=null, type=null]

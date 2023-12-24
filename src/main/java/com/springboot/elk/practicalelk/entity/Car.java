@@ -1,15 +1,23 @@
 package com.springboot.elk.practicalelk.entity;
 
+import java.time.LocalDate;
+
 public class Car {
 	private String brand;
 	private String color;
 	private String type;
+
 	
-	public Car(String brand, String color, String type) {
-		this.brand = brand;
-		this.color = color;
-		this.type = type;
+	public Car() {
+		
 	}
+	
+	 public Car(String brand, String color, String type) {
+		    super();
+		    this.brand = brand;
+		    this.color = color;
+		    this.type = type;
+		  }
 	public String getBrand() {
 		return brand;
 	}
