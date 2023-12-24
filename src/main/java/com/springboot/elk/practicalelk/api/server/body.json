@@ -7,3 +7,13 @@
     "available": null
 }
 
+
+http://localhost:8001/api/car/v1/echo
+{
+    "brand" : "Vinfast",
+    "type" : "sedan",
+    "color" : "black",
+    "firstReleaseDate": "2014-04-30",
+    "price": 6512,
+    "available": false
+}

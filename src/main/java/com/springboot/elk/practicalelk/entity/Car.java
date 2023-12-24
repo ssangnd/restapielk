@@ -1,6 +1,7 @@
 package com.springboot.elk.practicalelk.entity;
 
 import java.time.LocalDate;
+import java.util.List;
 
 public class Car {
 	private String brand;
@@ -9,10 +10,37 @@ public class Car {
 	private int price;
 	private boolean available;
 	private LocalDate firstReleaseDate;
+	 private List<String> additionalFeatures;
+	 
+	 private Engine engine;
+	 private List<Tire> tires;
+	 
+	public Engine getEngine() {
+		return engine;
+	}
 
-	
+	public void setEngine(Engine engine) {
+		this.engine = engine;
+	}
+
+	public List<Tire> getTires() {
+		return tires;
+	}
+
+	public void setTires(List<Tire> tires) {
+		this.tires = tires;
+	}
+
 	public int getPrice() {
 		return price;
+	}
+
+	public List<String> getAdditionalFeatures() {
+		return additionalFeatures;
+	}
+
+	public void setAdditionalFeatures(List<String> additionalFeatures) {
+		this.additionalFeatures = additionalFeatures;
 	}
 
 	public void setPrice(int price) {
@@ -67,8 +95,15 @@ public class Car {
 	@Override
 	public String toString() {
 		return "Car [brand=" + brand + ", color=" + color + ", type=" + type + ", price=" + price + ", available="
-				+ available + ", firstReleaseDate=" + firstReleaseDate + "]";
+				+ available + ", firstReleaseDate=" + firstReleaseDate + ", additionalFeatures=" + additionalFeatures
+				+ ", engine=" + engine + ", tires=" + tires + "]";
 	}
+
+//	@Override
+//	public String toString() {
+//		return "Car [brand=" + brand + ", color=" + color + ", type=" + type + ", price=" + price + ", available="
+//				+ available + ", firstReleaseDate=" + firstReleaseDate + "]";
+//	}
 	
 //	@Override
 //	public String toString() {

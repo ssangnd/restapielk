@@ -2,6 +2,10 @@ package com.springboot.elk.practicalelk.api.server;
 
 
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.ThreadLocalRandom;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,4 +38,15 @@ public class CarApi {
 		LOG.info("Car is : " + car);
 		return car.toString();
 	}
+	
+	  @GetMapping(value = "/random-collection", produces = MediaType.APPLICATION_JSON_VALUE)
+	  public List<Car> randomCarArray() {
+	    var result = new ArrayList<Car>();
+	
+	    for (int i = 0; i < ThreadLocalRandom.current().nextInt(1, 6); i++) {
+	      result.add(carService.generateCar());
+	    }
+	
+	    return result;
+	  }
 }
